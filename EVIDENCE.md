@@ -1,6 +1,6 @@
 # Evidence and limits — Australian Business Finder 0.3.0
 
-**Status:** Private package prepared for founder review; no public install or release claim yet. This version is a **sourced-candidates Finder**, not a verification service. An independently selected Toowoomba commercial-kitchen exhaust-cleaning case (`C03`) returned one candidate rather than padding to three; its cited first-party URL had been opened by the run and independently reopened, supported the advertised service area, and the answer did not assert independent verification or Toowoomba premises. The run exited zero. This is one bounded case, not national coverage or a general accuracy statistic.
+**Status:** Public beta source and clean installation verified; this is a **sourced-candidates Finder**, not a business verification service. The public GitHub package installed into a credential-free isolated Hermes home, passed its community safety scan and matched the published `SKILL.md` byte-for-byte. That isolated home did not run a live model lookup. An independently selected Toowoomba commercial-kitchen exhaust-cleaning case (`C03`) in the MEWY profile returned one candidate rather than padding to three; its cited first-party URL had been opened by the run and independently reopened, supported the advertised service area, and the answer did not assert independent verification or Toowoomba premises. The run exited zero. These are bounded observations, not national coverage or a general accuracy statistic.
 
 ## What happened in testing
 
@@ -13,8 +13,8 @@
 - The agent reports what opened pages **say**. Even an apparently precise address or shop description is not independent confirmation of current occupation, trading, licensing or inventory.
 - Search and page access vary. The configured web text extractor failed under a search-only backend during these tests; browser opening often recovered first-party pages. Bot challenges and 403/404 pages can reduce the list. An inaccessible business is not necessarily absent.
 - A source URL must be opened and relevant; model-generated links can be mistaken. Read important pages yourself before contacting, buying from or relying on a candidate. No business was contacted as part of testing.
-- This is not an ABN-backed national dataset, a recommendation/rating service, a booking tool or an authorised marketing list. No paired without-skill improvement result, price/quality measure, paid-user evidence, public clean-install check or cross-platform runtime test exists.
+- This is not an ABN-backed national dataset, a recommendation/rating service, a booking tool or an authorised marketing list. No paired without-skill improvement result, price/quality measure, paid-user evidence, live model run in the isolated install, or cross-platform runtime test exists.
 
 ## Authorship and evidence handling
 
-Dusk's skill defines the search-and-source-check workflow and conservative output boundary. Hermes provides the agent runtime and web/browser tools; a hosted model makes search decisions. The exact model, tools, prompts, raw private traces and auditor notes are retained in the project's private evaluation records. This public summary would be revised with the final version, fresh-case outcome and actual installation link after release approval. Web pages can change after their checked date.
+Dusk's skill defines the search-and-source-check workflow and conservative output boundary. Hermes provides the agent runtime and web/browser tools; a hosted model makes search decisions. Exact prompts, raw private traces and auditor notes are retained in the project's private evaluation records. The [public source package and installation instructions](README.md) are available; web pages can change after their checked date.

@@ -1,0 +1,20 @@
+# Evidence and limits — Australian Business Finder 0.3.0
+
+**Status:** Private package prepared for founder review; no public install or release claim yet. This version is a **sourced-candidates Finder**, not a verification service. An independently selected Toowoomba commercial-kitchen exhaust-cleaning case (`C03`) returned one candidate rather than padding to three; its cited first-party URL had been opened by the run and independently reopened, supported the advertised service area, and the answer did not assert independent verification or Toowoomba premises. The run exited zero. This is one bounded case, not national coverage or a general accuracy statistic.
+
+## What happened in testing
+
+- Earlier versions ran ten fixed lookups across different Australian services, shops and locations, plus named, excluded and no-match requests. Many returned useful first-party links. A test also showed the agent could choose the skill for a business lookup and avoid it for an unrelated email draft.
+- Independent holdouts found meaningful failures in the stronger “verified” promise: one branch office was twice counted as a physical shop, a service business described itself as local without publishing a physical address, one contact-page URL was cited without opening and returned 404, and a long search hit an iteration limit. The candidate-only scope is a deliberate response to those failures, not a claim that they never happened.
+- Version 0.3.0 was exercised on the prior Mildura and Rockhampton cases (`C01.jsonl` and `C02.jsonl`, private). Both runs exited zero. Mildura reported one business whose page published a Mildura address and termite-inspection service, and explained why a second “local” business without an address did not meet the physical-base request. Rockhampton described a published store address separately from an office/branch, called both **sourced candidates**, and explicitly said neither operation or stock was independently confirmed. The `/contact` URL cited for the Mildura alternative was opened and did not return 404. These are regression cases, not untouched independent holdouts.
+
+## Limits a user should know
+
+- The agent reports what opened pages **say**. Even an apparently precise address or shop description is not independent confirmation of current occupation, trading, licensing or inventory.
+- Search and page access vary. The configured web text extractor failed under a search-only backend during these tests; browser opening often recovered first-party pages. Bot challenges and 403/404 pages can reduce the list. An inaccessible business is not necessarily absent.
+- A source URL must be opened and relevant; model-generated links can be mistaken. Read important pages yourself before contacting, buying from or relying on a candidate. No business was contacted as part of testing.
+- This is not an ABN-backed national dataset, a recommendation/rating service, a booking tool or an authorised marketing list. No paired without-skill improvement result, price/quality measure, paid-user evidence, public clean-install check or cross-platform runtime test exists.
+
+## Authorship and evidence handling
+
+Dusk's skill defines the search-and-source-check workflow and conservative output boundary. Hermes provides the agent runtime and web/browser tools; a hosted model makes search decisions. The exact model, tools, prompts, raw private traces and auditor notes are retained in the project's private evaluation records. This public summary would be revised with the final version, fresh-case outcome and actual installation link after release approval. Web pages can change after their checked date.

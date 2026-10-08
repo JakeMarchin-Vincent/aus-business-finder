@@ -1,6 +1,6 @@
 # Australian Business Finder
 
-**Status: private release draft — not yet publicly installable.**
+**Public beta:** source and installation are available. This is a sourced-candidates Finder, not independent business verification.
 
 A small agent skill that finds **Australian business candidates** by type and place and links to the businesses' own public pages. It tells you what each site says about its services, address or service area. It **does not independently verify** that a business trades, occupies an address, has stock or is available. It never contacts a business or builds a database.
 
@@ -16,7 +16,13 @@ For an Adelaide refrigeration-repair request, the skill returned LJ Refrigeratio
 
 ## Install
 
-The intended package is `skills/aus-business-finder-mv/SKILL.md`. **There is no live install URL yet.** The exact Hermes installation command will be added only after the public repository exists and a fresh installation succeeds. Hermes must have web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
+Install it in Hermes:
+
+```bash
+hermes skills install JakeMarchin-Vincent/aus-business-finder/skills/aus-business-finder-mv
+```
+
+This command was exercised in a clean, isolated Hermes home on 8 October 2026: the community safety scan allowed it and the installed `SKILL.md` matched the published file byte-for-byte. A fresh live model run *inside that credential-free isolated home* has not been performed; identical skill bytes were exercised in MEWY's profile. Hermes needs web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
 
 ## Reading the results
 

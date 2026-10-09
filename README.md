@@ -35,6 +35,6 @@ Search rankings are not recommendations, ratings, stock checks, price checks or 
 
 ## Evidence, authorship and limits
 
-See [the test evidence and known failures](EVIDENCE.md). Earlier versions sometimes overstated a shop or physical location and once cited a broken contact-page URL; that is why this version reports website claims as **candidates**, not independently verified businesses. Its value is a short, inspectable starting point, not a certification service.
+See [the detailed eight-case evaluation](EVALUATION.md) and [release evidence and limitations](EVIDENCE.md). In a small, adversarial paired run, v0.3.0 returned **4** clearly supported candidates versus **8** for the audited ordinary-agent baseline; it also missed page details and copied one contact incorrectly. This is **not evidence of a performance improvement** over a general agent. Earlier versions sometimes overstated a shop or physical location and once cited a broken contact-page URL; that is why this version reports website claims as **candidates**, not independently verified businesses. Its value is a short, inspectable starting point, not a certification service.
 
 Dusk authored the Australian discovery workflow with Hermes Agent assistance. Hermes supplies the runtime and web tools; a hosted model makes the research decisions. ABN Lookup can help with a confidently matched legal identity but does not provide a complete sector/contact/service-area feed. Google Maps is not a bulk-data source. Public publishing and portfolio wording remain subject to founder review.
